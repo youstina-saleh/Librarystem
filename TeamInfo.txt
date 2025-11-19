@@ -1,0 +1,8 @@
+Team Number: 3
+Project: Library System
+
+Members:
+1. Abdelrahman Ali | 900232237 | abdelrahman72688@aucegypt.edu
+2. Wassim Bousbia | 900234040 | Wassim@aucegypt.edu
+3. Youssef Sarofeem | 900237960 | Youssef_Sarofeem@aucegypt.edu
+4. Youstina Saleh | 900245562 | youstinasaleh@aucegypt.edu
