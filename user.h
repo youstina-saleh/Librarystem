@@ -2,7 +2,7 @@
 #define USER_H
 
 #include <string>
-using std::string;
+using namespace std;
 
 class User {
 private:
@@ -11,7 +11,7 @@ private:
     string role;
 
 public:
-    User() = default;
+    User() {}
     User(const string& u, const string& p, const string& r);
 
     string getUsername() const;
@@ -19,8 +19,6 @@ public:
     string getRole() const;
 
     void setData(const string& u, const string& p, const string& r);
-
-    // for file storage or debugging
     string toString() const;
 };
 

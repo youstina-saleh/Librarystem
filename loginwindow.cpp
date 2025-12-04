@@ -1,5 +1,6 @@
 #include "loginwindow.h"
 #include "ui_loginwindow.h"
+#include "adminpage.h"
 LoginWindow::LoginWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::LoginWindow)
@@ -31,12 +32,14 @@ void LoginWindow::on_pushButton_login_clicked()
     }
 
     // login success
-    if (role == "Admin")
-        ui->label_empty_error->setText("Logged in as Admin");
-    else if (role == "Member")
+    if (role == "admin"){
+        adminpage* adminWindow = new adminpage(this); // 'this' makes LoginWindow the parent
+        adminWindow->show();
+    }
+    else if (role == "member")
         ui->label_empty_error->setText("Logged in as Member");
     else
-        ui->label_empty_error->setText("Logged in as " + QString::fromStdString(role));
+        ui->label_empty_error->setText("Logged in as librarian");
 }
 
 

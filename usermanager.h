@@ -1,32 +1,25 @@
 #ifndef USERMANAGER_H
 #define USERMANAGER_H
 
+#include "user.h"
 #include <vector>
 #include <string>
-#include "user.h"
-
-using std::vector;
-using std::string;
+using namespace std;
 
 class UserManager {
 private:
-    vector<User> users;
+    string filePath;
 
 public:
-    UserManager();
+    UserManager(const string& filePath);
 
-    bool login(const string& username, const string& password, string& outRole);
-    bool isDuplicateUser(const string& username) const;
-    bool isValidPassword(const string& password) const;
-    void addUser(const string& username, const string& password, const string& role);
-
-    //I am waiting for member3 who will handle the files
-    void loadUsersFromFile(const std::string& filename);
-    void saveUsersToFile(const std::string& filensame) const;
-
-
-
-    void addTestAdmin();
+    bool addUser(const User& user);
+    bool usernameExists(const string& username);
+    bool validatePassword(const string& password);
+    vector<User> loadUsers();
+    bool saveAllUsers(const vector<User>& users);
+    bool deleteUser(const string& username);
+    bool login(const string& username, const string& password, string& roleOut);
 };
 
-#endif // USERMANAGER_H
+#endif

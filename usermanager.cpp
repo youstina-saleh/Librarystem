@@ -1,40 +1,95 @@
 #include "usermanager.h"
+#include <fstream>
+#include <sstream>
 #include <cctype>
+//#include <stdexcept>
+using namespace std;
 
-UserManager::UserManager() {
-    addTestAdmin();
-}
+//done
+UserManager::UserManager(const std::string& filePath) {
+    this->filePath = filePath;
 
-void UserManager::addTestAdmin() {
-    users.emplace_back("admin", "admin1234", "Admin");
-}
-
-bool UserManager::login(const string& username, const string& password, string& outRole) {
-    for (const auto& u : users) {
-        if (u.getUsername() == username && u.getPassword() == password) {
-            outRole = u.getRole();
-            return true;
-        }
+    // Create default admin if file doesn't exist
+    ifstream file(filePath);
+    if (!file.is_open()) {
+        throw runtime_error("Cannot open users file: " + filePath);
     }
-    return false;
+    file.close();
 }
 
-bool UserManager::isDuplicateUser(const string& username) const {
-    for (const auto& u : users) {
-        if (u.getUsername() == username) return true;
-    }
-    return false;
-}
+bool UserManager::validatePassword(const std::string& password) {
+    if (password.length() < 8)
+        return false;
 
-bool UserManager::isValidPassword(const string& password) const {
-    if (password.size() < 8) return false;
     bool hasDigit = false;
     for (char c : password)
-        if (std::isdigit((unsigned char)c))
+        if (isdigit(c))
             hasDigit = true;
+
     return hasDigit;
 }
 
-void UserManager::addUser(const string& username, const string& password, const string& role) {
-    users.emplace_back(username, password, role);
+bool UserManager::usernameExists(const std::string& username) {
+    std::vector<User> users = loadUsers();
+    for (auto& u : users)
+        if (u.getUsername() == username)
+            return true;
+    return false;
+}
+
+//done
+vector<User> UserManager::loadUsers() {
+    vector<User> users;
+    ifstream inFile(filePath);
+    string line;
+    while (getline(inFile, line)) {
+        istringstream iss(line);
+        string u, p, r;
+        if (!(iss >> u >> p >> r)) continue; // skip bad lines
+        users.emplace_back(u, p, r);
+    }
+    return users;
+}
+
+bool UserManager::saveAllUsers(const std::vector<User>& users) {
+    std::ofstream outFile(filePath, std::ios::trunc);
+    if (!outFile.is_open()) return false;
+
+    for (auto& u : users)
+        outFile << u.getUsername() << " " << u.getPassword() << " " << u.getRole() << "\n";
+
+    return true;
+}
+
+bool UserManager::addUser(const User& user) {
+    if (usernameExists(user.getUsername())) return false;
+    if (!validatePassword(user.getPassword())) return false;
+
+    std::ofstream out(filePath, std::ios::app);
+    if (!out.is_open()) return false;
+
+    out << user.getUsername() << " " << user.getPassword() << " " << user.getRole() << "\n";
+    return true;
+}
+
+bool UserManager::deleteUser(const std::string& username) {
+    std::vector<User> users = loadUsers();
+    // auto it = std::remove_if(users.begin(), users.end(), [&](User& u) {
+    //     return u.getUsername() == username;
+    // });
+    // if (it == users.end()) return false;
+
+    // users.erase(it, users.end());
+    // return saveAllUsers(users);
+}
+
+bool UserManager::login(const std::string& username, const std::string& password, std::string& roleOut) {
+    vector<User> users = loadUsers();
+    for (auto& u : users) {
+        if (u.getUsername() == username && u.getPassword() == password) {
+            roleOut = u.getRole();
+            return true;
+        }
+    }
+    return false; //the login faild
 }
