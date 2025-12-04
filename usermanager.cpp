@@ -2,22 +2,22 @@
 #include <fstream>
 #include <sstream>
 #include <cctype>
-//#include <stdexcept>
+#include <stdexcept>
 using namespace std;
 
 //done
-UserManager::UserManager(const std::string& filePath) {
+UserManager::UserManager(const string& filePath) {
     this->filePath = filePath;
 
-    // Create default admin if file doesn't exist
     ifstream file(filePath);
     if (!file.is_open()) {
-        throw runtime_error("Cannot open users file: " + filePath);
-    }
-    file.close();
+        // Create the file
+        ofstream newFile(filePath);
+        if (!newFile.is_open())
+            throw runtime_error("Cannot create users file: " + filePath);
 }
-
-bool UserManager::validatePassword(const std::string& password) {
+}
+bool UserManager::validatePassword(const std::string& password){
     if (password.length() < 8)
         return false;
 
@@ -62,13 +62,21 @@ bool UserManager::saveAllUsers(const std::vector<User>& users) {
 }
 
 bool UserManager::addUser(const User& user) {
-    if (usernameExists(user.getUsername())) return false;
-    if (!validatePassword(user.getPassword())) return false;
+    if (usernameExists(user.getUsername()))
+        return false;
 
-    std::ofstream out(filePath, std::ios::app);
-    if (!out.is_open()) return false;
+    if (!validatePassword(user.getPassword()))
+        return false;
 
-    out << user.getUsername() << " " << user.getPassword() << " " << user.getRole() << "\n";
+    ofstream out(filePath, ios::app);
+    if (!out.is_open()) {
+        return false;   // file could not be opened
+    }
+
+    out << user.getUsername() << " "
+        << user.getPassword() << " "
+        << user.getRole() << "\n";
+
     return true;
 }
 

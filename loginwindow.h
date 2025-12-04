@@ -2,7 +2,6 @@
 #define LOGINWINDOW_H
 #include "usermanager.h"
 #include <QMainWindow>
-
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class LoginWindow; }
