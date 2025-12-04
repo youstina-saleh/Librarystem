@@ -1,0 +1,10 @@
+101,Harry Potter and the Sorcerer's Stone,J.K. Rowling,5
+102,The Hobbit,J.R.R. Tolkien,3
+103,Data Structures and Algorithms,Mark Weiss,4
+104,Introduction to Algorithms (CLRS),Thomas H. Cormen,2
+105,Clean Code,Robert C. Martin,3
+106,The C++ Programming Language,Bjarne Stroustrup,4
+107,Artificial Intelligence: A Modern Approach,Stuart Russell,1
+108,Design Patterns,Erich Gamma,2
+109,Operating Systems Concepts,Abraham Silberschatz,3
+110,Computer Networks,Andrew S. Tanenbaum,5

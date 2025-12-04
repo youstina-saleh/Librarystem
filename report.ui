@@ -6,14 +6,97 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>397</width>
-    <height>320</height>
+    <width>650</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Reports Page</string>
   </property>
+
+  <layout class="QVBoxLayout" name="verticalLayout">
+   
+   <!-- ==== TOP BUTTON ROW ==== -->
+   <item>
+    <layout class="QHBoxLayout" name="topButtons">
+     <item>
+      <widget class="QPushButton" name="btnBorrowed">
+       <property name="text">
+        <string>Borrowed Books</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnOverdue">
+       <property name="text">
+        <string>Overdue Books</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnMostBorrowed">
+       <property name="text">
+        <string>Most Borrowed</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- ==== TABLE ==== -->
+   <item>
+    <widget class="QTableWidget" name="tableReports">
+     <property name="columnCount">
+      <number>0</number>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+
+   <!-- ==== EXPORT BUTTON ==== -->
+   <item>
+    <layout class="QHBoxLayout" name="exportLayout">
+     <item>
+      <spacer name="leftSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnExportCSV">
+       <property name="text">
+        <string>Export as CSV</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="rightSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+
+  </layout>
  </widget>
+
  <resources/>
  <connections/>
 </ui>

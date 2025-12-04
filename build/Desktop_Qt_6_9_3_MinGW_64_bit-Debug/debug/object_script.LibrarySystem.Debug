@@ -1,0 +1,15 @@
+debug/adminpage.o
+debug/bookrecords.o
+debug/borrowreturn.o
+debug/dashboard.o
+debug/main.o
+debug/loginwindow.o
+debug/report.o
+debug/user.o
+debug/usermanager.o
+debug/moc_adminpage.o
+debug/moc_bookrecords.o
+debug/moc_borrowreturn.o
+debug/moc_dashboard.o
+debug/moc_loginwindow.o
+debug/moc_report.o
