@@ -3,6 +3,8 @@
 #include <sstream>
 #include <cctype>
 #include <stdexcept>
+#include <algorithm>
+
 using namespace std;
 
 //done
@@ -70,7 +72,7 @@ bool UserManager::addUser(const User& user) {
 
     ofstream out(filePath, ios::app);
     if (!out.is_open()) {
-        return false;   // file could not be opened
+        return false;
     }
 
     out << user.getUsername() << " "
@@ -80,15 +82,27 @@ bool UserManager::addUser(const User& user) {
     return true;
 }
 
-bool UserManager::deleteUser(const std::string& username) {
+bool UserManager::deleteUser(const string& username) {
     std::vector<User> users = loadUsers();
-    // auto it = std::remove_if(users.begin(), users.end(), [&](User& u) {
-    //     return u.getUsername() == username;
-    // });
-    // if (it == users.end()) return false;
 
-    // users.erase(it, users.end());
-    // return saveAllUsers(users);
+    // Find the user to check their role because we need to prevent
+    //deleting the admin in this way.
+    auto it = std::find_if(users.begin(), users.end(),
+                           [&](const User& u){ return u.getUsername() == username; });
+
+    if (it == users.end())
+        return false; // user not found
+
+    if (it->getRole() == "admin")
+        return false;
+
+    //size_t usually used for itirators
+    //we here move the selected user to the end of the vector.
+    users.erase(remove_if(users.begin(), users.end(),
+                               [&](const User& u){ return u.getUsername() == username; }),
+                users.end());
+
+    return saveAllUsers(users);
 }
 
 bool UserManager::login(const std::string& username, const std::string& password, std::string& roleOut) {
@@ -99,5 +113,5 @@ bool UserManager::login(const std::string& username, const std::string& password
             return true;
         }
     }
-    return false; //the login faild
+    return false;
 }
