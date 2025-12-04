@@ -1,0 +1,15 @@
+release/adminpage.o
+release/bookrecords.o
+release/borrowreturn.o
+release/dashboard.o
+release/main.o
+release/loginwindow.o
+release/report.o
+release/user.o
+release/usermanager.o
+release/moc_adminpage.o
+release/moc_bookrecords.o
+release/moc_borrowreturn.o
+release/moc_dashboard.o
+release/moc_loginwindow.o
+release/moc_report.o

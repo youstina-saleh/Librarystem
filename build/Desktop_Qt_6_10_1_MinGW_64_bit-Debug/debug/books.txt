@@ -1,0 +1,8 @@
+1|The Great Gatsby|F. Scott Fitzgerald|Fiction|5|3
+2|To Kill a Mockingbird|Harper Lee|Fiction|4|2
+3|1984|George Orwell|Science Fiction|6|1
+4|Pride and Prejudice|Jane Austen|Romance|3|0
+5|The Catcher in the Rye|J.D. Salinger|Fiction|5|5
+6|Harry Potter|J.K. Rowling|Fantasy|10|7
+7|The Hobbit|J.R.R. Tolkien|Fantasy|4|2
+8|Moby Dick|Herman Melville|Adventure|2|1
