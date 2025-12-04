@@ -1,0 +1,15 @@
+101|The Great Gatsby|F. Scott Fitzgerald|Novel|5|Available
+102|Introduction to Algorithms|Thomas H. Cormen|Education|2|Available
+103|Clean Code|Robert C. Martin|Programming|1|Available
+104|Harry Potter and the Sorcerer's Stone|J.K. Rowling|Fantasy|7|Available
+105|The Pragmatic Programmer|Andrew Hunt|Programming|3|Available
+106|A Brief History of Time|Stephen Hawking|Science|0|Out of Stock
+107|The Psychology of Money|Morgan Housel|Finance|4|Available
+108|Deep Work|Cal Newport|Productivity|2|Available
+109|To Kill a Mockingbird|Harper Lee|Novel|1|Available
+110|1984|George Orwell|Novel|6|Available
+111|Zero to One|Peter Thiel|Business|2|Available
+112|The Lean Startup|Eric Ries|Business|5|Available
+113|The Art of War|Sun Tzu|Strategy|1|Available
+114|Sapiens|Yuval Noah Harari|History|3|Available
+115|Atomic Habits|James Clear|Self-Help|8|Available
