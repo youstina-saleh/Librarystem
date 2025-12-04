@@ -23,6 +23,10 @@ private slots:
 
     void on_pushButton_load_clicked();
 
+    void showContextMenu(const QPoint &pos);
+
+    void deleteSelectedUser();
+
 private:
     Ui::adminpage *ui;
     UserManager* userManager1; //to access add and load users

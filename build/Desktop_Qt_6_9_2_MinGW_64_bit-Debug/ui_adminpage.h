@@ -73,10 +73,10 @@ public:
         QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
         tableWidget->setObjectName("tableWidget");
-        tableWidget->setGeometry(QRect(10, 141, 181, 191));
+        tableWidget->setGeometry(QRect(10, 141, 191, 191));
         pushButton_load = new QPushButton(adminpage);
         pushButton_load->setObjectName("pushButton_load");
-        pushButton_load->setGeometry(QRect(260, 300, 81, 21));
+        pushButton_load->setGeometry(QRect(260, 300, 91, 21));
 
         retranslateUi(adminpage);
 
