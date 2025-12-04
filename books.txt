@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 101|The Great Gatsby|F. Scott Fitzgerald|Novel|5|Available
 102|Introduction to Algorithms|Thomas H. Cormen|Education|2|Available
 103|Clean Code|Robert C. Martin|Programming|1|Available
@@ -13,3 +14,15 @@
 113|The Art of War|Sun Tzu|Strategy|1|Available
 114|Sapiens|Yuval Noah Harari|History|3|Available
 115|Atomic Habits|James Clear|Self-Help|8|Available
+=======
+101,Harry Potter and the Sorcerer's Stone,J.K. Rowling,5
+102,The Hobbit,J.R.R. Tolkien,3
+103,Data Structures and Algorithms,Mark Weiss,4
+104,Introduction to Algorithms (CLRS),Thomas H. Cormen,2
+105,Clean Code,Robert C. Martin,3
+106,The C++ Programming Language,Bjarne Stroustrup,4
+107,Artificial Intelligence: A Modern Approach,Stuart Russell,1
+108,Design Patterns,Erich Gamma,2
+109,Operating Systems Concepts,Abraham Silberschatz,3
+110,Computer Networks,Andrew S. Tanenbaum,5
+>>>>>>> origin/borrow_return_part

@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
+<<<<<<< HEAD
 <!-- Written by QtCreator 17.0.1, 2025-12-04T19:52:52. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
   <value type="QByteArray">{abab61ba-7eca-4ea9-acae-5d7eceb2198f}</value>
+=======
+<!-- Written by QtCreator 17.0.2, 2025-12-04T19:52:03. -->
+<qtcreator>
+ <data>
+  <variable>EnvironmentId</variable>
+  <value type="QByteArray">{670c8ada-5c7a-4235-9456-a2f69c96c5b9}</value>
+>>>>>>> origin/borrow_return_part
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -86,10 +94,13 @@
     <valuelist type="QVariantList" key="ClangTools.SuppressedDiagnostics"/>
     <value type="bool" key="ClangTools.UseGlobalSettings">true</value>
    </valuemap>
+<<<<<<< HEAD
    <valuemap type="QVariantMap" key="ClangdSettings">
     <value type="bool" key="blockIndexing">true</value>
     <value type="bool" key="useGlobalSettings">true</value>
    </valuemap>
+=======
+>>>>>>> origin/borrow_return_part
   </valuemap>
  </data>
  <data>
@@ -97,16 +108,21 @@
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
    <value type="bool" key="HasPerBcDcs">true</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 6.9.2 MinGW 64-bit</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 6.9.2 MinGW 64-bit</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.qt6.692.win64_mingw_kit</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 6.9.3 MinGW 64-bit</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 6.9.3 MinGW 64-bit</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.qt6.693.win64_mingw_kit</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="int" key="EnableQmlDebugging">0</value>
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">Y:\AUC\CS II\CS2 Lab\Project\Librarystem\build\Desktop_Qt_6_9_2_MinGW_64_bit-Debug</value>
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">Y:/AUC/CS II/CS2 Lab/Project/Librarystem/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:\AUC\Auc3\cs_lab\Librarystem\build\Desktop_Qt_6_9_3_MinGW_64_bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">E:/AUC/Auc3/cs_lab/Librarystem/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug</value>
+>>>>>>> origin/borrow_return_part
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -168,19 +184,32 @@
      <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph &quot;dwarf,4096&quot; -F 250</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:</value>
+<<<<<<< HEAD
      <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">Y:/AUC/CS II/CS2 Lab/Project/Librarystem/LibrarySystem.pro</value>
+=======
+     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">E:/AUC/Auc3/cs_lab/Librarystem/LibrarySystem.pro</value>
+>>>>>>> origin/borrow_return_part
      <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
      <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
      <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
      <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+<<<<<<< HEAD
      <value type="QString" key="RunConfiguration.WorkingDirectory.default">Y:/AUC/CS II/CS2 Lab/Project/Librarystem/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug</value>
+=======
+     <value type="QString" key="RunConfiguration.WorkingDirectory.default">E:/AUC/Auc3/cs_lab/Librarystem/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug</value>
+>>>>>>> origin/borrow_return_part
     </valuemap>
     <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">Y:\AUC\CS II\CS2 Lab\Project\Librarystem\build\Desktop_Qt_6_9_2_MinGW_64_bit-Release</value>
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">Y:/AUC/CS II/CS2 Lab/Project/Librarystem/build/Desktop_Qt_6_9_2_MinGW_64_bit-Release</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:\AUC\Auc3\cs_lab\Librarystem\build\Desktop_Qt_6_9_3_MinGW_64_bit-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">E:/AUC/Auc3/cs_lab/Librarystem/build/Desktop_Qt_6_9_3_MinGW_64_bit-Release</value>
+>>>>>>> origin/borrow_return_part
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -236,8 +265,13 @@
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
     <value type="int" key="EnableQmlDebugging">0</value>
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">Y:\AUC\CS II\CS2 Lab\Project\Librarystem\build\Desktop_Qt_6_9_2_MinGW_64_bit-Profile</value>
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">Y:/AUC/CS II/CS2 Lab/Project/Librarystem/build/Desktop_Qt_6_9_2_MinGW_64_bit-Profile</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:\AUC\Auc3\cs_lab\Librarystem\build\Desktop_Qt_6_9_3_MinGW_64_bit-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">E:/AUC/Auc3/cs_lab/Librarystem/build/Desktop_Qt_6_9_3_MinGW_64_bit-Profile</value>
+>>>>>>> origin/borrow_return_part
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -318,12 +352,20 @@
     <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph &quot;dwarf,4096&quot; -F 250</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:</value>
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">Y:/AUC/CS II/CS2 Lab/Project/Librarystem/LibrarySystem.pro</value>
+=======
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">E:/AUC/Auc3/cs_lab/Librarystem/LibrarySystem.pro</value>
+>>>>>>> origin/borrow_return_part
     <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">Y:/AUC/CS II/CS2 Lab/Project/Librarystem/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug</value>
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">E:/AUC/Auc3/cs_lab/Librarystem/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug</value>
+>>>>>>> origin/borrow_return_part
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
