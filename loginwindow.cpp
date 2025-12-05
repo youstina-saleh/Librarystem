@@ -33,15 +33,17 @@ void LoginWindow::on_pushButton_login_clicked()
         return;
     }
 
-    // login success
     if (role == "admin"){
         adminpage *adm = new adminpage(userManager);
+        adm->setAttribute(Qt::WA_DeleteOnClose);
         adm->show();
         this->close();
     }
     else if (role == "member" || role == "librarian"){
-        Dashboard* d = new Dashboard(username ,"member", this);
+        Dashboard* d = new Dashboard(username, QString::fromStdString(role), nullptr);
+        d->setAttribute(Qt::WA_DeleteOnClose);
         d->show();
+        this->close();
     }
 
 }

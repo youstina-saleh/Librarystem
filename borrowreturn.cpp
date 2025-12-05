@@ -43,7 +43,7 @@ QList<BorrowRecord> borrowedList;
 void BorrowReturn::loadBooks() {
     books.clear();
 
-    QFile file("Y:\\AUC\\CS II\\CS2 Lab\\Project\\Librarystem\\books.txt");
+    QFile file("books.txt");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return;
 
@@ -52,16 +52,28 @@ void BorrowReturn::loadBooks() {
         QString line = in.readLine().trimmed();
         if (line.isEmpty()) continue;
 
-        QStringList parts = line.split(",");
-        if (parts.size() != 4) continue;
-
-        Book b;
-        b.id = parts[0].trimmed();
-        b.title = parts[1].trimmed();
-        b.author = parts[2].trimmed();
-        b.copies = parts[3].trimmed().toInt();
-
-        books.append(b);
+        // Try pipe-separated format first (ID|Title|Author|Category|Copies|Status)
+        QStringList parts = line.split('|');
+        if (parts.size() < 5) {
+            // Fallback to comma-separated format (ID,Title,Author,Copies)
+            parts = line.split(',');
+            if (parts.size() != 4) continue;
+            
+            Book b;
+            b.id = parts[0].trimmed();
+            b.title = parts[1].trimmed();
+            b.author = parts[2].trimmed();
+            b.copies = parts[3].trimmed().toInt();
+            books.append(b);
+        } else {
+            // Pipe-separated format: ID|Title|Author|Category|Copies|Status
+            Book b;
+            b.id = parts[0].trimmed();
+            b.title = parts[1].trimmed();
+            b.author = parts[2].trimmed();
+            b.copies = parts[4].trimmed().toInt(); // Copies is at index 4
+            books.append(b);
+        }
     }
     file.close();
 }

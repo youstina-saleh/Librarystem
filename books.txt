@@ -1,28 +1,10 @@
-<<<<<<< HEAD
-101|The Great Gatsby|F. Scott Fitzgerald|Novel|5|Available
-102|Introduction to Algorithms|Thomas H. Cormen|Education|2|Available
-103|Clean Code|Robert C. Martin|Programming|1|Available
-104|Harry Potter and the Sorcerer's Stone|J.K. Rowling|Fantasy|7|Available
-105|The Pragmatic Programmer|Andrew Hunt|Programming|3|Available
-106|A Brief History of Time|Stephen Hawking|Science|0|Out of Stock
-107|The Psychology of Money|Morgan Housel|Finance|4|Available
-108|Deep Work|Cal Newport|Productivity|2|Available
-109|To Kill a Mockingbird|Harper Lee|Novel|1|Available
-110|1984|George Orwell|Novel|6|Available
-111|Zero to One|Peter Thiel|Business|2|Available
-112|The Lean Startup|Eric Ries|Business|5|Available
-113|The Art of War|Sun Tzu|Strategy|1|Available
-114|Sapiens|Yuval Noah Harari|History|3|Available
-115|Atomic Habits|James Clear|Self-Help|8|Available
-=======
-101,Harry Potter and the Sorcerer's Stone,J.K. Rowling,5
-102,The Hobbit,J.R.R. Tolkien,3
-103,Data Structures and Algorithms,Mark Weiss,4
-104,Introduction to Algorithms (CLRS),Thomas H. Cormen,2
-105,Clean Code,Robert C. Martin,3
-106,The C++ Programming Language,Bjarne Stroustrup,4
-107,Artificial Intelligence: A Modern Approach,Stuart Russell,1
-108,Design Patterns,Erich Gamma,2
-109,Operating Systems Concepts,Abraham Silberschatz,3
-110,Computer Networks,Andrew S. Tanenbaum,5
->>>>>>> origin/borrow_return_part
+101|Harry Potter and the Sorcerer's Stone|J.K. Rowling|Fantasy|5|Available
+102|The Hobbit|J.R.R. Tolkien|Fantasy|3|Available
+103|Data Structures and Algorithms|Mark Weiss|Education|4|Available
+104|Introduction to Algorithms (CLRS)|Thomas H. Cormen|Education|2|Available
+105|Clean Code|Robert C. Martin|Programming|3|Available
+106|The C++ Programming Language|Bjarne Stroustrup|Programming|4|Available
+107|Artificial Intelligence: A Modern Approach|Stuart Russell|Science|1|Available
+108|Design Patterns|Erich Gamma|Programming|2|Available
+109|Operating Systems Concepts|Abraham Silberschatz|Education|3|Available
+110|Computer Networks|Andrew S. Tanenbaum|Education|5|Available
