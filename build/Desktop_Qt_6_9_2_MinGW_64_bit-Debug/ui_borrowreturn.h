@@ -23,7 +23,6 @@ QT_BEGIN_NAMESPACE
 class Ui_BorrowReturn
 {
 public:
-    QLabel *selectlabel;
     QTableWidget *tableWidget;
     QLabel *label;
     QLabel *selectlabel_2;
@@ -41,9 +40,6 @@ public:
         if (BorrowReturn->objectName().isEmpty())
             BorrowReturn->setObjectName("BorrowReturn");
         BorrowReturn->resize(846, 570);
-        selectlabel = new QLabel(BorrowReturn);
-        selectlabel->setObjectName("selectlabel");
-        selectlabel->setGeometry(QRect(20, 60, 91, 31));
         tableWidget = new QTableWidget(BorrowReturn);
         if (tableWidget->columnCount() < 4)
             tableWidget->setColumnCount(4);
@@ -56,13 +52,17 @@ public:
         QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
         tableWidget->setObjectName("tableWidget");
-        tableWidget->setGeometry(QRect(100, 90, 511, 191));
+        tableWidget->setGeometry(QRect(170, 90, 501, 211));
         label = new QLabel(BorrowReturn);
         label->setObjectName("label");
-        label->setGeometry(QRect(310, 10, 211, 61));
+        label->setGeometry(QRect(310, 10, 231, 61));
+        QFont font;
+        font.setPointSize(14);
+        font.setBold(true);
+        label->setFont(font);
         selectlabel_2 = new QLabel(BorrowReturn);
         selectlabel_2->setObjectName("selectlabel_2");
-        selectlabel_2->setGeometry(QRect(30, 360, 91, 31));
+        selectlabel_2->setGeometry(QRect(40, 360, 91, 31));
         selectlabel_3 = new QLabel(BorrowReturn);
         selectlabel_3->setObjectName("selectlabel_3");
         selectlabel_3->setGeometry(QRect(40, 460, 91, 31));
@@ -96,7 +96,6 @@ public:
     void retranslateUi(QDialog *BorrowReturn)
     {
         BorrowReturn->setWindowTitle(QCoreApplication::translate("BorrowReturn", "Dialog", nullptr));
-        selectlabel->setText(QCoreApplication::translate("BorrowReturn", "Select a Book", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QCoreApplication::translate("BorrowReturn", "ID", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
@@ -106,7 +105,7 @@ public:
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(3);
         ___qtablewidgetitem3->setText(QCoreApplication::translate("BorrowReturn", "Copies", nullptr));
         label->setText(QCoreApplication::translate("BorrowReturn", "Borrow / Return Page", nullptr));
-        selectlabel_2->setText(QCoreApplication::translate("BorrowReturn", "Borrow ID: ", nullptr));
+        selectlabel_2->setText(QCoreApplication::translate("BorrowReturn", "Book ID: ", nullptr));
         selectlabel_3->setText(QCoreApplication::translate("BorrowReturn", "Book ID: ", nullptr));
         selectlabel_4->setText(QCoreApplication::translate("BorrowReturn", "Borrow a Book: ", nullptr));
         selectlabel_5->setText(QCoreApplication::translate("BorrowReturn", "Return a Book ", nullptr));

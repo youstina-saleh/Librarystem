@@ -32,7 +32,7 @@ public:
     {
         if (Dashboard->objectName().isEmpty())
             Dashboard->setObjectName("Dashboard");
-        Dashboard->resize(392, 383);
+        Dashboard->resize(686, 383);
         welcomelabel = new QLabel(Dashboard);
         welcomelabel->setObjectName("welcomelabel");
         welcomelabel->setGeometry(QRect(30, 20, 121, 41));
@@ -55,16 +55,16 @@ public:
         QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
         tableWidget->setVerticalHeaderItem(0, __qtablewidgetitem3);
         tableWidget->setObjectName("tableWidget");
-        tableWidget->setGeometry(QRect(20, 90, 271, 192));
+        tableWidget->setGeometry(QRect(110, 80, 451, 192));
         recordspushButton = new QPushButton(Dashboard);
         recordspushButton->setObjectName("recordspushButton");
-        recordspushButton->setGeometry(QRect(20, 300, 71, 21));
+        recordspushButton->setGeometry(QRect(150, 310, 101, 41));
         borrowReturnpushButton_2 = new QPushButton(Dashboard);
         borrowReturnpushButton_2->setObjectName("borrowReturnpushButton_2");
-        borrowReturnpushButton_2->setGeometry(QRect(120, 300, 71, 21));
+        borrowReturnpushButton_2->setGeometry(QRect(290, 310, 121, 41));
         pushButton_3 = new QPushButton(Dashboard);
         pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(210, 300, 71, 21));
+        pushButton_3->setGeometry(QRect(450, 310, 71, 41));
 
         retranslateUi(Dashboard);
 

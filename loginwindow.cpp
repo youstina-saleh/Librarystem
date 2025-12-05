@@ -40,7 +40,7 @@ void LoginWindow::on_pushButton_login_clicked()
         this->close();
     }
     else if (role == "member" || role == "librarian"){
-        Dashboard* d = new Dashboard(this);
+        Dashboard* d = new Dashboard(username ,"member", this);
         d->show();
     }
 

@@ -183,7 +183,7 @@ void BookRecords::on_btnEditBook_clicked()
     QList<QTableWidgetItem*> selection = ui->tableBooks->selectedItems();
     if (selection.isEmpty()) {
         QMessageBox::information(this, tr("Edit Book"),
-                                 tr("Please select a book to edit."));
+        tr("Please select a book to edit."));
         return;
     }
 

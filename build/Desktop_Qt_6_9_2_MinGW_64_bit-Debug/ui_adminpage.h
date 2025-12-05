@@ -39,32 +39,32 @@ public:
     {
         if (adminpage->objectName().isEmpty())
             adminpage->setObjectName("adminpage");
-        adminpage->resize(394, 396);
+        adminpage->resize(549, 473);
         label = new QLabel(adminpage);
         label->setObjectName("label");
-        label->setGeometry(QRect(10, 30, 51, 16));
+        label->setGeometry(QRect(10, 30, 81, 16));
         label_2 = new QLabel(adminpage);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(10, 60, 51, 16));
+        label_2->setGeometry(QRect(10, 60, 81, 16));
         label_3 = new QLabel(adminpage);
         label_3->setObjectName("label_3");
         label_3->setGeometry(QRect(10, 90, 41, 21));
         lineEdit_username = new QLineEdit(adminpage);
         lineEdit_username->setObjectName("lineEdit_username");
-        lineEdit_username->setGeometry(QRect(70, 30, 113, 20));
+        lineEdit_username->setGeometry(QRect(110, 30, 113, 20));
         lineEdit_password = new QLineEdit(adminpage);
         lineEdit_password->setObjectName("lineEdit_password");
-        lineEdit_password->setGeometry(QRect(70, 60, 113, 20));
+        lineEdit_password->setGeometry(QRect(110, 60, 113, 20));
         lineEdit_password->setEchoMode(QLineEdit::EchoMode::Password);
         radioButton_member = new QRadioButton(adminpage);
         radioButton_member->setObjectName("radioButton_member");
-        radioButton_member->setGeometry(QRect(70, 90, 68, 17));
+        radioButton_member->setGeometry(QRect(70, 90, 121, 17));
         radioButton_librarian = new QRadioButton(adminpage);
         radioButton_librarian->setObjectName("radioButton_librarian");
-        radioButton_librarian->setGeometry(QRect(70, 110, 68, 17));
+        radioButton_librarian->setGeometry(QRect(70, 110, 111, 17));
         pushButton_add = new QPushButton(adminpage);
         pushButton_add->setObjectName("pushButton_add");
-        pushButton_add->setGeometry(QRect(250, 100, 91, 21));
+        pushButton_add->setGeometry(QRect(240, 90, 91, 31));
         tableWidget = new QTableWidget(adminpage);
         if (tableWidget->columnCount() < 2)
             tableWidget->setColumnCount(2);
@@ -73,10 +73,10 @@ public:
         QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
         tableWidget->setObjectName("tableWidget");
-        tableWidget->setGeometry(QRect(10, 141, 191, 191));
+        tableWidget->setGeometry(QRect(150, 160, 251, 191));
         pushButton_load = new QPushButton(adminpage);
         pushButton_load->setObjectName("pushButton_load");
-        pushButton_load->setGeometry(QRect(260, 300, 91, 21));
+        pushButton_load->setGeometry(QRect(230, 390, 91, 31));
 
         retranslateUi(adminpage);
 
